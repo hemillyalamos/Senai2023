@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Consultar Clima</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <h1>Consulte o Clima</h1>
+            <span class="parallax-text" text="Clima">
+                Consultar Clima
+            </span>
+            <img src="https://png.pngtree.com/png-clipart/20220921/ourmid/pngtree-fluffy-realistic-clouds-png-image_6195486.png" alt="nuvem">
+            <div  id="card1">
+            
+            <div class="card">
+                <input type="text" name="input" id="input" placeholder="Pesquisar por Cidade/País/Estado">
+                <button onclick="valorInput()"></button>
+            </div>
+        </section>
+
+        <section id="main">
+            <div class="cardao">
+               
+                    <div>
+                        <img src="" alt="" id="icon">
+                        <h1 id="nomeCidade"></h1>
+                    </div>
+                    <div>
+                        <p id="nomeEstado"></p>
+                        <p id="nomePais"></p>
+                    </div>
+                    <p id="localTime"></p>
+                </div>
+                <div id="card2">
+                    <p id="tC"></p>
+                    <p id="tF"></p>
+                    <p id="wind"></p>
+                    <p id="humidity"></p>
+                    <p id="uv"></p>
+                </div>
+
+            </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../cardapio/assets/icone-de-pizza-colecao-de-fast-food-icone-de-comida-isolado_138676-504.avif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrinho</title>
+</head>
+<body onload="preencherTabela()">
+    <header>
+        <div>
+            <p id="title">Pizzaria 777</p>
+            <p id="subtitle"></p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../cardapio/index.html">Cardápio</a></li>
+            <li><a href="../carrinho/index.html">Carrinho</a></li>
+            <li><a href="../pedidos/index.html">Pedidos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr id="borda">
+                    <th>Items</th>
+                    <th>sabor</th>
+                    <th>preço</th>
+                   <th></th>
+                </tr>
+            </thead>
+            <tbody id="tcorpo">
+            </tbody>
+        </table>
+        <button onclick="limparDados()" id="limpar">Limpar carrinho</button>
+    </div>    
+</main>
+<footer>
+     <h2 onclick="calcularTotal()">Total </h2> 
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
